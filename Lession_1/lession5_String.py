@@ -11,3 +11,10 @@ print(weather2)
 
 weather3  = '\t It\'s \"kind of\" \n sunny'
 print(weather3)
+
+# Formatted string literals (f-strings)
+
+name = 'Jonny'
+age = 55
+print(f'Hi {name}, you are {age} years old')
+print(' Hi {}, you are {} years old'.format(name, age))
