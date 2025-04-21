@@ -24,3 +24,10 @@ basket.sort() # Create a new list with the sorted values
 print(basket) 
 basket.reverse() # Create a new list with the sorted values
 print(basket)  # Sort the list in ascending order
+
+# List - Unpacking
+basket = [1, 2, 3,4,5,6]
+a, b, c, *others,d = basket  # Unpacking the list into variables a, b, c
+print(a, b, c)  # Output: 1 2 3
+print(others)  # Output: [4, 5]
+print(d)  # Output: 6
