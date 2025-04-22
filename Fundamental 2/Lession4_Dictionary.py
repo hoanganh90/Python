@@ -25,5 +25,11 @@ print(dictionary.keys()) # Output: dict_keys(['weapon', 'greeting', 'isMagic', T
 
 user2 = dict(name= 'John', age = 30) # Defining a dictionary using the dict() constructor
 print(user2) # Output: {'name': 'John', 'age': 30}
+user3 = user2.copy()
 user2.clear()
 print(user2) # Output: {}
+print(user3) # Output: {'name': 'John', 'age': 30}
+user3.update({'name': 'Jane'})
+print(user3.get('name')) # Output: Jane
+
+
