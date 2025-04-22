@@ -24,3 +24,5 @@ basket.sort() # Create a new list with the sorted values
 print(basket) 
 basket.reverse() # Create a new list with the sorted values
 print(basket)  # Sort the list in ascending order
+
+# None: is a special data type which is similar to null in other programming languages
