@@ -25,6 +25,8 @@ print(basket)
 basket.reverse() # Create a new list with the sorted values
 print(basket)  # Sort the list in ascending order
 
+# None: is a special data type which is similar to null in other programming languages
+
 # List - Unpacking
 basket = [1, 2, 3,4,5,6]
 a, b, c, *others,d = basket  # Unpacking the list into variables a, b, c
