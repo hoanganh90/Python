@@ -19,3 +19,6 @@ dictionary_0 = {
 }
 for value in dictionary_0.values():
     print(value)  # Output: John 30
+    
+for key in dictionary_0:
+    print(dictionary_0[key]) 
