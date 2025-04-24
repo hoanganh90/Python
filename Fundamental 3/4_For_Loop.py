@@ -4,7 +4,7 @@ for item in ' Hoang cong anh':
 # For loop in a list
 for item in ['Hoang', 'cong', 'anh']:
     print(item)
-# For loop in a tuple
+# For loop in a tuple -> Looks like a choocolate bar (----)
 for item in ('Hoang', 'cong', 'anh'):
     print(item)
 
