@@ -35,3 +35,15 @@ for item in dictionary_0.items():
     print(key, value )  
 for key, value in dictionary_0.items():
     print(key, value )  
+
+# For in list
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+count = 0
+for item in my_list:
+    count += item
+print(count)  # Output: 55
+
+# Range function range(): Creates a sequence of numbers
+# range(start, stop, step)
+for i in range(1, 10, 2):
+   print(i) 
