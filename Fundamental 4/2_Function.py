@@ -25,3 +25,13 @@ def showTree(picture: list):
         print("")
     return # The function showTree() is defined to print a tree-like structure using a 2D list (picture) of 0s and 1s.
 showTree(picture) 
+
+#parameter: a value that is passed into a function when it is called.
+def say_hello2(name, emoji):
+    print(f'Hello {name} {emoji}')
+
+#passing arguments to the function
+say_hello2("John", "😊") 
+say_hello2( "😊","John") 
+# Function with keyword arguments
+say_hello2(emoji="😊",name = "Anh")
