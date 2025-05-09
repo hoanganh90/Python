@@ -16,6 +16,7 @@ class PlayerCharacters:
     def adding_things(cls, a, b):
         return a + b
     @staticmethod # Static method - does not require cls or self
+    # static methods do not have access to the instance (self) or the class (cls)
     def adding_things_static(a, b):
         return a + b
 
