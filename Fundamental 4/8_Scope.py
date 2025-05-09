@@ -22,5 +22,3 @@ def add_to_total(x):
     print(s) # Output: 9
     return total
 print(add_to_total(50)) # Output: 150
-print("Hello" == 'Hello') # Output: True
-print("Hello"[0]) # Output: H

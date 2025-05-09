@@ -15,6 +15,7 @@ cat3 = Cat("Shadow", 3)
 # 2 Create a function that finds the oldest cat
 def find_oldest_cat(cats):
     oldest_cat = cats[0]
+    oldest_cat2 = max(cats, key=lambda cat: cat.age) # Using max function to find the oldest cat
     for cat in cats:
         if cat.age > oldest_cat.age:
             oldest_cat = cat
