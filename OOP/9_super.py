@@ -16,3 +16,5 @@ class Archer(User):
 # Example usage
 wizard1 = Wizard( "Merlin", 50, "merlin.com")
 print(wizard1.email) # User signed in
+# Introspection
+print(dir(wizard1)) # <class '__main__.Wizard'>
