@@ -20,3 +20,5 @@ def long_time2():
         i * 5
 long_time()
 long_time2()
+
+# Generator is used to optimize the performance of the code because data is stored in memory only when it is needed.

@@ -22,3 +22,5 @@ print(next(g)) # get the next value from the generator  2
 print(next(g)) # get the next value from the generator 4
 print(next(g)) # get the next value from the generator 6
 print(next(g)) # get the next value from the generator 8
+
+# next() will raise a StopIteration exception when there are no more values to generate
