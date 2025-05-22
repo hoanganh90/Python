@@ -6,9 +6,10 @@ def add(a, b):
     pdb.set_trace()
     return a + b
 add(1, 2)
-# pdb step
-# pdb next
-# pdb continue
-# pdb list
-# pdb print
-# pdb where
+# pdb step  - Step into the function
+# pdb next - Execute the next line of code
+# pdb continue - Continue execution until the next breakpoint
+# pdb break - Set a breakpoint
+# pdb list - List source code around the current line
+# pdb print - Print the value of a variable
+# pdb where - Print the current stack trace
