@@ -1,0 +1,8 @@
+# To run a function download from python lib
+0. Install pip3 install translate
+1. Use power shell
+2. cd C:\Users\hoang\src\Python
+3. Create virtual env: python -m venv venv
+4. Activate virtual env: venv\ : .\venv\Scripts\activate
+5. Run the script file inside the env, in power shell: (venv) PS C:\Users\hoang\src\Python\File IO> python .\script2.py
+6. Deactivate virtual env: deactivate
