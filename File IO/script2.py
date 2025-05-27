@@ -20,6 +20,14 @@ try:
     with open(file_path, "r") as my_file:
         print(f"\nContent of '{file_path}':")
         print(my_file.read())
+        translator = Translator(to_lang="ja")
+        translation = translator.translate(my_file.read())
+        print(translation)
+        with open(file_path, "w") as my_file_w:
+            my_file_w.write(translation)
+        my_file.close()
+        print(f"File '{file_path}' has been updated with the translation.")
+       
 except FileNotFoundError:
     print(f"File '{file_path}' not found. Please check the path and ensure it exists.")
 except Exception as e:
