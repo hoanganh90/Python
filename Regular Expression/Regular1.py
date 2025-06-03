@@ -16,3 +16,9 @@ c = pattern.match(string)  # Returns a match object if the string starts with th
 print(c)  # Output: <re.Match object; span=(0, 41), match='search this inside of this text please!'>
 d = pattern.fullmatch(string)  # Returns a match object if the entire string matches the pattern
 print(d)  # Output: <re.Match object; span=(0, 41), match='search this inside of this text please!'>
+
+pattertnEmail = re.compile(r'[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+')
+def is_valid_email(email):
+    return bool(pattertnEmail.fullmatch(email))
+# Example usage
+print(is_valid_email('qwert@gmail.com'))
