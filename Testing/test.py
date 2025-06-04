@@ -2,6 +2,10 @@ import unittest
 import main
 
 class TestMain(unittest.TestCase):
+    def setUp(self):
+        # This method is called before each test
+        print("Setting up for a test case...")  # You can initialize variables or set up conditions here
+        pass
     def test_do_stuff(self):
         test_num = 10
         result = main.do_stuff(test_num)

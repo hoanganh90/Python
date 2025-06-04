@@ -1,0 +1,13 @@
+To run a unittest
+- Run all: python3 -m unittest
+- Run one-by-one python3 -m unittest -v (Verbose)
+def setUp(self):
+        # This method is called before each test
+        print("Setting up for a test case...")  # You can initialize variables or set up conditions here
+-----------------------------------------------------------------------------------------------------------
+def # Define your tests here
+-----------------------------------------------------------------------------------------------------------
+def tearDown(self):
+    # This method is called after each test
+    print("Tearing down after a test case...") # Clean up resources or reset conditions here
+    pass
