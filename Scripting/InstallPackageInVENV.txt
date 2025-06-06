@@ -1,0 +1,2 @@
+run this command in venv
+pip3 install PyPDF2==1.26

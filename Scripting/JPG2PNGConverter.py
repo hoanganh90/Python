@@ -13,7 +13,11 @@ for filename in os.listdir(image_folder):
     if img.format == 'JPEG':
         # Convert the image to PNG
         png_filename = os.path.splitext(filename)[0] + '.png'
+        clean_name = os.path.splitext(filename)[0]
+        print(f"Clean name: {clean_name}")
         img.save(f"{output_folder}/{png_filename}", 'PNG')
         print(f"Converted {filename} to {png_filename}")
     else:
         print(f"Skipped {filename}, not a JPEG image.")
+
+# Command to run in venv: python .\JPG2PNGConverter.py Pokedex new
