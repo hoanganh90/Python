@@ -14,5 +14,9 @@ class TestMain(unittest.TestCase):
             test_num = "20ss"
             result = main.do_stuff(test_num)
             self.assertEqual(result,25, f"Expected 15 but got {result} for input {test_num}")
+    def tearDown(self):
+        # This method is called after each test
+        print("Tearing down after a test case...") # Clean up resources or reset conditions here
+        pass
 if __name__ == '__main__':
     unittest.main()  # This runs all the test cases defined in the TestMain class

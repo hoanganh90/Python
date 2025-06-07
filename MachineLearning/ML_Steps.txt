@@ -1,0 +1,15 @@
+#1 - Import the data
+#2 - Clean the data
+#3 - Split data. Training set/Test set
+#4 - Create a Model
+#5 - Check the output
+#6 - Improve the model
+
+Tools in ML 
+Python
+NumPy -> THe most important lib
+Pandas -> Used for data analysis, transform data into tableu, csv data: "pip install pandas" in venv
+scikit-learn
+matplotlib -> Drawing
+Jupyter notebook (Anaconda)
+Kanggle : Provide datasets
