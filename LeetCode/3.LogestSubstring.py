@@ -6,6 +6,8 @@ class Solution:
         index = 0
         if len(s) == 1:
             return 1
+        if len(s) == 0:
+            return 0
         while True:
             for char in s[index:]:
                 if(char not in current_substring):
