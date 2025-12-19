@@ -1,4 +1,5 @@
 # Exercise 1: Create a Class with instance attributes
+
 # Write a Python program to create a Vehicle class with max_speed and mileage instance attributes.
 class Vehicle:
     def __init__(self, name, max_speed, capacity):
@@ -22,4 +23,21 @@ School_Bus = Bus("Volvo", 180, 12)
 print(School_Bus.seating_capacity())
 print(School_Bus.fare())
 
+# In Python, __init__ is what we call a constructor. 
+# Its primary job is to initialize a new object's state by assigning values to its properties as soon as the object is created.
+# Think of a class as a blueprint and 
+# the __init__ method as the assembly line that sets the specific details for each item coming off that blueprint.
+
+class Robot:
+    def __init__(self, name, battery_level):
+        # This is where we 'set up' the object
+        self.name = name
+        self.battery_level = battery_level
+
+# Creating two different objects from the same blueprint
+bot1 = Robot("R2D2", 100)
+bot2 = Robot("C3PO", 45)
+#If we were building a game with different characters, we wouldn't want every character to have the same name and health by default.
+print(bot1.name) # Output: R2D2
+print(bot2.name) # Output: C3PO
 
