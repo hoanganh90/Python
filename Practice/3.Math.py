@@ -59,3 +59,25 @@ def MergeTwoLists(list1, list2):
 list1 = [10, 20, 25, 30, 35]
 list2 = [40, 45, 60, 75, 90]
 MergeTwoLists(list1,list2)
+#Exercise 12: Calculate income tax
+def CalculateIncomeTax(income):
+    if income <= 10000:
+        return 0
+    elif income <= 20000 & income > 10000:
+        return (income -10000) * 10/100
+    else:
+        return (income -20000) * 20/100 + 10000 * 10/100
+print(CalculateIncomeTax(10000))
+print(CalculateIncomeTax(20000))
+print(CalculateIncomeTax(30000))
+#Exercise 17: Generate Fibonacci series up to 15 terms
+def GenerateFibonacci(num):
+    a = 0
+    b = 1
+    for i in range(num):
+        yield a
+        temp = a
+        a = b
+        b = temp + b
+for x in GenerateFibonacci(10):
+    print(x)
