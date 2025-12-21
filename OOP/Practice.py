@@ -40,4 +40,24 @@ bot2 = Robot("C3PO", 45)
 #If we were building a game with different characters, we wouldn't want every character to have the same name and health by default.
 print(bot1.name) # Output: R2D2
 print(bot2.name) # Output: C3PO
+#OOP Exercise 1: Create a Class with instance attributes
+class Vehicle:
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+    def set_seating_capacity(self, cap):
+        self.seating_capacity = cap
+    def print_info(self):
+        return print(f"This vehicle {self.name} has max speed: {self.max_speed} and mileage: {self.mileage} , number of seat: {self.seating_capacity}")
+modelX = Vehicle("modelX",500,200000)
+
+class Bus(Vehicle):
+    def seating_capacity(self, bus_capacity):
+        super().set_seating_capacity(bus_capacity)
+Volvo_Bus = Bus("School Bus", 500, 100000)
+Volvo_Bus.seating_capacity(45)
+Volvo_Bus.print_info()
+
+
 
