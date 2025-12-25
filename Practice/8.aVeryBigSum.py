@@ -4,7 +4,6 @@ import os
 import random
 import re
 import sys
-import numpy as np
 #
 # Complete the 'aVeryBigSum' function below.
 #
@@ -19,18 +18,24 @@ def sum2BigNumbers (a,b):
     digit = 0
     next_extra = 0
     for i in range(0, result_len):
-        digit = int(str_a[i]) + int(str_b[i]) + next_extra
-        if(digit > 10):
+        val_a = int(str_a[i]) if i < len(str_a) else 0
+        val_b = int(str_b[i]) if i < len(str_b) else 0
+        digit = val_a + val_b + next_extra
+        if(digit >= 10):
             result.append(digit - 10)
             next_extra = 1
         else:
             result.append(digit)
             next_extra = 0
-    result2 = int("".join(map(str, result)))
-    value_32 = np.int32(result2)
-    print(value_32)
-
-sum2BigNumbers(17,18)
+    if next_extra == 1:
+        result.append(next_extra)
+    result2 = int("".join(map(str, result[::-1])))
+    #value_32 = np.int32(result2)
+    return result2
 def aVeryBigSum(ar):
     # Write your code here
-    pass
+    result = 0
+    for i in range(0,len(ar)):
+        result = sum2BigNumbers(result, ar[i])
+    return result
+print(aVeryBigSum([1000000001, 1000000002, 1000000003, 1000000004, 1000000005  ]))
