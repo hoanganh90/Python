@@ -81,3 +81,23 @@ def GenerateFibonacci(num):
         b = temp + b
 for x in GenerateFibonacci(10):
     print(x)
+
+# Design a plus operator withoi "+-"
+# Solution: using logarit
+# e^a * e^b = e ^(a+b) -> log(e^a * e^b) = a + b
+# Design a minus operator withoi "+-"
+# e^a / e^b = e ^(a-b) -> log(e^a / e^b) = a - b
+import math
+class Operator:
+    def __init__(self,a,b):
+        self.a = a
+        self.b = b
+    def plus_func(self):
+        return math.log(math.exp(self.a) * math.exp(self.b))
+    def minus_func(self):
+        return math.log(math.exp(self.a) / math.exp(self.b))
+operator = Operator(5,6)
+print(operator.plus_func())
+print(operator.minus_func())
+
+    
