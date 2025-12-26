@@ -15,7 +15,7 @@ def timeConversion(s):
             time24h = "00" + remaingInfo
         else: time24h = s[: -2]
 
-    print(time24h)
+    return (time24h)
 
 
 timeConversion("02:01:00PM")
