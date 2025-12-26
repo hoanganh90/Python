@@ -11,7 +11,7 @@ class Solution:
         while(True):
             foundLastDigit = False
             if s[i] == " " and len(s) > 1:
-                if foundSign:
+                if foundSign and foundDigit:
                     numberStr = "0"
                     break
                 else: 
