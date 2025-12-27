@@ -44,6 +44,26 @@ class Solution:
                     temp_matrix.pop(0)
                 else: break
             return result
+    def letterCombinations(self, digits: str) -> list[str]:
+        matrix_letters = []
+        for i in digits:
+            matrix_letters.append(self.getCharFromAsciiByN(i))
+        result = []
+        row_count = len(digits)
+        temp_matrix = matrix_letters
+        while(row_count > 0):
+            row = temp_matrix.pop(0)
+            if len(result) == 0:
+                for i in row:
+                    result.append(i)
+            else:
+                temp = []
+                for i in result:
+                    for j in row:
+                        temp.append(i+j)
+                result = temp
+            row_count -= 1
+        return result
 # test
 s = Solution()
-print(s.letterPairCombinations("29"))      
+print(s.letterCombinations("234"))      
