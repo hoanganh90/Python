@@ -1,0 +1,7 @@
+Practice: 
+Use sort() vs sorted() correctly.
+list.sort(): Modifies the original list (Space $O(1)$ in terms of your own code, though Timsort uses $O(N)$ internally).
+sorted(list): Returns a new list (Space $O(N)$).
+
+# Sort by count (descending), then by value (ascending)
+nums.sort(key=lambda x: (-counts[x], x))
