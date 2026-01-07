@@ -1,4 +1,5 @@
 def findTheLongestSubString(s):
+    # This is O(N2) becuase it has while loop to N items, inside this while, there is s[j] not in subStrArray: another O(N)
     result = []
     subStrArray = []
     i = 0
@@ -14,7 +15,9 @@ def findTheLongestSubString(s):
             j = i
         if i == len(s):
             break
+
 def findTheLongestSubString2(s):
+    # This is O(N) becuase it has a linear for loop to N items, inside a while, but it does not loop through the list, just used to remove and add items
     char_set = set()
     left = 0
     right = 0
@@ -31,3 +34,9 @@ def findTheLongestSubString2(s):
     return max_len
 findTheLongestSubString("abcabcbb")
 print(findTheLongestSubString2("abcabcbb"))
+
+#In an interview, the recruiter will watch to see if you use a list or a set for lookups.
+
+# Using a List: Shows you know the logic. Loop in a list has O(N)
+
+# Using a Set: Shows you understand performance and scaling. Loop in a set is O(1)
