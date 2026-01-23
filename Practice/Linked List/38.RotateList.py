@@ -15,6 +15,8 @@ class Solution:
         curr.next = head
         return curr
     def rotateRight(self, head: ListNode, k: int) -> ListNode:
+        if not head or not head.next or k == 0:
+            return head
         for _ in range(k):
             head = self.rotateList(head)
         return head
