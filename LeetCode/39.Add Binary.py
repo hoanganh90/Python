@@ -7,28 +7,33 @@ class Solution:
         extra = 0
         hasExtra = False
         while n > 0:
-            if length_a:
+            if length_a > 0:
                 num1 = int(a[length_a-1]) if a[length_a-1].isdigit() else 0
             else:
                 num1 = 0
-            if length_b:
+            if length_b > 0:
                 num2 = int(b[length_b-1]) if b[length_b-1].isdigit() else 0
             else:
                 num2 = 0
             if hasExtra:
-                temp = num1 ^ num2  + 1          
+                tmp = num1 + num2 + extra
             else:
-                temp = num1 ^ num2
-            result.append(temp)  
-            
-            hasExtra = num1 and num2    
+                tmp = num1 + num2
+            if tmp > 1:
+                hasExtra = True
+                extra = 1
+                result.append(tmp % 2)
+            else:
+                result.append(tmp)
+                
             n -= 1
             length_a -= 1
             length_b -= 1
             if n == 0 and hasExtra:
                 result.append(1)
-        return result[::-1]
+            str_result = "".join(map(str,result[::-1]))
+        return str_result
 
 s = Solution()
-print(s.addBinary("11", "1"))
+print(s.addBinary("1010", "1011"))
         
